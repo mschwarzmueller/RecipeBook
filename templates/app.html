@@ -1,1 +1,13 @@
-Hello World!
+<header>
+	<nav>
+		<ul>
+			<li>
+				<a [routerLink]="['Recipes']">Recipes</a>
+				<a [routerLink]="['ShoppingList']">Shoppoing List</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<div class="main">
+	<router-outlet></router-outlet>
+</div>
