@@ -13,11 +13,18 @@ export class ShoppingListService {
 	}
 
 	getIndexOfItem(item: Ingredient) {
+		console.log("getIndexOfItem:", item);
+		console.log("SHOPPING_LIST:", SHOPPING_LIST);
+		console.log("SHOPPING_LIST.indexOf(item):", SHOPPING_LIST.indexOf(item));		
 		return SHOPPING_LIST.indexOf(item);
 	}
 
 	insertItem(item: Ingredient) {
+		console.log("in insertItem ---------");
+		console.log("SHOPPING_LIST before:", SHOPPING_LIST);
+		console.log("item:", item);
 		SHOPPING_LIST.push(item);
+		console.log("SHOPPING_LIST after:", SHOPPING_LIST);
 	}
 
 	insertItems(items: Ingredient[]) {

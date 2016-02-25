@@ -15,6 +15,11 @@ export class ShoppingListEditComponent {
 	constructor(private _shoppingListService: ShoppingListService) {}
 
 	onSubmit(item: Ingredient) {
+		console.log("in onSubmit", item);
+		console.log("this.ingredient", this.ingredient);
+		// console.log("selectedItem", selectedItem);
+
+
 		this.ingredient !== null
 			? this._shoppingListService.updateItem(this._shoppingListService.getIndexOfItem(this.ingredient), item)
 			: this._shoppingListService.insertItem(item);

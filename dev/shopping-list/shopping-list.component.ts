@@ -23,6 +23,12 @@ export class ShoppingListComponent implements OnInit {
 	}
 
 	onSelectItem(item: Ingredient) {
-		this.selectedItem = item
+		console.log("in onSelectedItem", item);
+		this.selectedItem = item;
+		console.log("this.selectedItem", this.selectedItem);
+	}
+
+	onAddItem() {
+		this.selectedItem = null;
 	}
 }
