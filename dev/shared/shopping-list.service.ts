@@ -17,7 +17,7 @@ export class ShoppingListService {
 	}
 
 	insertItem(item: Ingredient) {
-		SHOPPING_LIST.indexOf(item);
+		SHOPPING_LIST.push(item);
 	}
 
 	insertItems(items: Ingredient[]) {

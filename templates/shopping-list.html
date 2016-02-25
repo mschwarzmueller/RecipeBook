@@ -1,8 +1,8 @@
 <h1>Shopping List</h1>
-<div>Edit Section</div>
+<my-shopping-list-edit [ingredient]="selectedItem"></my-shopping-list-edit>
 <div class="list">
 	<button class="btn">Add new Item</button>
 	<ul>
-		<li>List Items...</li>
+		<li *ngFor="#item of shoppingList" (click)="onSelectItem(item)" >{{item.name}} ({{item.amount}})</li>
 	</ul>
 </div>
